@@ -1,0 +1,2 @@
+D:\SelinumProject\Seleniumtesting\pom.xml
+mvn test

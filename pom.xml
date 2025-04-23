@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         						https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SeleniumTesting</groupId>
+  <artifactId>Seleniumtesting</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+ <dependencies> 
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+    	<groupId>org.seleniumhq.selenium</groupId>
+   	 <artifactId>selenium-java</artifactId>
+    	<version>4.31.0</version>
+	</dependency>
+	<dependency>
+		<groupId>com.selenium.framework</groupId>
+		<artifactId>selenium-automation</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+	<groupId>net.minidev</groupId>
+	<artifactId>accessors-smart</artifactId>
+	<version>1.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.webdriver/webdriver-chrome -->
+<dependency>
+    <groupId>org.seleniumhq.webdriver</groupId>
+    <artifactId>webdriver-chrome</artifactId>
+    <version>0.9.7376</version>
+</dependency>
+ </dependencies>
+ 
+ <build>
+    <!-- To define the plugin version in your parent POM -->
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.14.0</version>
+        </plugin>
+     
+      </plugins>
+    </pluginManagement>
+    <!-- To use the plugin goals in your POM or parent POM -->
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+   
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.3</version>
+        </plugin>
+      
+    </plugins>
+  </build>
+</project>
